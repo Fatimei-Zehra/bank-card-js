@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.left-section {
+    background-color: purple;
+    width: 35%;
+    height: 700px;
+    position: relative;
+}
+
+.card {
+    background-color: pink;
+    width: 75%;
+    height: 210px;
+    position: absolute;
+    top: 20%;
+    left: 53%;
+    border-radius: 5px;
+    padding: 25px 17px;
+}
+
+.user-details {
+    display: flex;
+    align-items: center;
+}
+
+.user-photo {
+    width: 50px;
+    height: 50px;
+    background-color: gray;
+    border-radius: 100%;
+    margin-right: 12px;
+}
+
+.user-details span {
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    display: inline-block;
+    border: 2px solid gray;
+}
+
+.card-number {
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+    font-size: 20px;
+}
+
+.card-number div {
+    margin-right: 10px;
+}
+
+.card-number div:last-child {
+    margin-right: 0;
+}
+
+
+.card-information {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.card-information .user-name {
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: 700;
+}
+
+.card-back {
+    background-color: #e88f9f;
+    width: 75%;
+    height: 210px;
+    position: absolute;
+    top: 55%;
+    left: 70%;
+    border-radius: 5px;
+}
+
+.card-back .line {
+    width: 100%;
+    background-color: gray;
+    height: 50px;
+    margin-top: 25px;
+}
+
+.cvv-code {
+    background-color: gray;
+    margin-top: 25px;
+    width: 200px;
+    margin-left: 95px;
+    text-align: end;
+    padding: 10px 7px;
+}
+
+
+#box {
+    display: flex;
+    justify-content: space-between;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+#btn-confirm {
+    background-color: black;
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 10px 15px;
+    color: #fff;
+    cursor: pointer;
+    width: 50%;
+}
+
+.right-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    width: 50%;
+    height: 30px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid gray;
+    padding: 0px 10px;
+}
+
+.card-month-details input {
+    width: 11%;
+}
+
+.month-year {
+    display: flex;
+}
