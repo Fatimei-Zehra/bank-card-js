@@ -34,26 +34,20 @@ buttonConfirm.addEventListener("click", (e) => {
     let userCardYear = document.getElementById("card-year");
     let userCardCvc = document.getElementById("card-cvc");
 
-    //Card number
-    let cardNumber = document.getElementById("card-num").value;
-    let cardNumberDisplay = document.querySelectorAll(".card-num-display");
+  
 
-    // for (let i = 0; i < cardNumber.length; i += 4) {
-    //     // cardNumberDisplay.innerText=
-    //   (cardNumber.substring(i, i + 4));
-    // }
 
     if (userName.value === "")
         userName.style.border = "2px solid  red"
     else userName.style.border = "2px solid green"
 
 
-    if (userCardNumber.value > userCardNumber.length && userCardNumber.value < userCardNumber.length)
+    if (userCardNumber.value === "")
         userCardNumber.style.border = "2px solid red"
     else userCardNumber.style.border = "2px solid  green"
 
 
-    if (userCardNumber.value === "")
+    if (userCardNumber.value < 16)
         userCardNumber.style.border = "2px solid red"
     else userCardNumber.style.border = "2px solid  green"
 
@@ -77,19 +71,19 @@ buttonConfirm.addEventListener("click", (e) => {
     if (userCardCvc.value > 3)
         userCardCvc.style.border = "2px solid red"
     else userCardCvc.style.border = "2px solid green"
+
+
 })
 
 
 
 
 
-// var str = '4111111111111111';
-
-// var parts = [];
-// for (var i = 0; i < str.length; i += 4) {
-//     parts.push(str.substring(i, i + 4));
-// }
-// console.log(parts);
 
 
 
+
+
+
+
+  
